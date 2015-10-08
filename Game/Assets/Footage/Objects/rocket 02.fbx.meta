@@ -1,0 +1,158 @@
+fileFormatVersion: 2
+guid: 9813dc4013dd8454f83b474485e5d4b6
+timeCreated: 1441357581
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Array_1
+    100002: Cap_1
+    100004: Cap_1_2
+    100006: Cap_1_3
+    100008: Cap_1_4
+    100010: Cap_2
+    100012: Cap_2_2
+    100014: Cap_2_3
+    100016: Cap_2_4
+    100018: Extrude
+    100020: Extrude_2
+    100022: Extrude_3
+    100024: Extrude_4
+    100026: mirr
+    100028: Null_1
+    100030: Null_2
+    100032: Null_3
+    100034: Null_4
+    100036: //RootNode
+    100038: Sphere
+    100040: SS
+    100042: Torus
+    400000: Array_1
+    400002: Cap_1
+    400004: Cap_1_2
+    400006: Cap_1_3
+    400008: Cap_1_4
+    400010: Cap_2
+    400012: Cap_2_2
+    400014: Cap_2_3
+    400016: Cap_2_4
+    400018: Extrude
+    400020: Extrude_2
+    400022: Extrude_3
+    400024: Extrude_4
+    400026: mirr
+    400028: Null_1
+    400030: Null_2
+    400032: Null_3
+    400034: Null_4
+    400036: //RootNode
+    400038: Sphere
+    400040: SS
+    400042: Torus
+    2300000: Cap_1
+    2300002: Cap_1_2
+    2300004: Cap_1_3
+    2300006: Cap_1_4
+    2300008: Cap_2
+    2300010: Cap_2_2
+    2300012: Cap_2_3
+    2300014: Cap_2_4
+    2300016: Extrude
+    2300018: Extrude_2
+    2300020: Extrude_3
+    2300022: Extrude_4
+    2300024: Sphere
+    2300026: SS
+    2300028: Torus
+    3300000: Cap_1
+    3300002: Cap_1_2
+    3300004: Cap_1_3
+    3300006: Cap_1_4
+    3300008: Cap_2
+    3300010: Cap_2_2
+    3300012: Cap_2_3
+    3300014: Cap_2_4
+    3300016: Extrude
+    3300018: Extrude_2
+    3300020: Extrude_3
+    3300022: Extrude_4
+    3300024: Sphere
+    3300026: SS
+    3300028: Torus
+    4300000: Extrude
+    4300002: Cap_1
+    4300004: Cap_2
+    4300006: Extrude_2
+    4300008: Cap_1_2
+    4300010: Cap_2_2
+    4300012: Extrude_3
+    4300014: Cap_1_3
+    4300016: Cap_2_3
+    4300018: Extrude_4
+    4300020: Cap_1_4
+    4300022: Cap_2_4
+    4300024: Torus
+    4300026: Sphere
+    4300028: SS
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

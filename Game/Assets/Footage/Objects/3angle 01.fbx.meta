@@ -1,0 +1,143 @@
+fileFormatVersion: 2
+guid: 36c0190e3f1c67f4b8a837c6d3dc677d
+timeCreated: 1441357580
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Cloner
+    100004: Cone
+    100006: Cone_1
+    100008: Cylinder
+    100010: Torus
+    100012: Torus_1
+    100014: Torus_2
+    100016: Torus_6_0
+    100018: Torus_6_1
+    100020: Torus_6_2
+    100022: Torus_6_3
+    100024: Torus_6_4
+    100026: Torus_6_5
+    100028: Torus_6_6
+    100030: Torus_6_7
+    400000: //RootNode
+    400002: Cloner
+    400004: Cone
+    400006: Cone_1
+    400008: Cylinder
+    400010: Torus
+    400012: Torus_1
+    400014: Torus_2
+    400016: Torus_6_0
+    400018: Torus_6_1
+    400020: Torus_6_2
+    400022: Torus_6_3
+    400024: Torus_6_4
+    400026: Torus_6_5
+    400028: Torus_6_6
+    400030: Torus_6_7
+    2300000: Cone
+    2300002: Cone_1
+    2300004: Cylinder
+    2300006: Torus
+    2300008: Torus_1
+    2300010: Torus_2
+    2300012: Torus_6_0
+    2300014: Torus_6_1
+    2300016: Torus_6_2
+    2300018: Torus_6_3
+    2300020: Torus_6_4
+    2300022: Torus_6_5
+    2300024: Torus_6_6
+    2300026: Torus_6_7
+    3300000: Cone
+    3300002: Cone_1
+    3300004: Cylinder
+    3300006: Torus
+    3300008: Torus_1
+    3300010: Torus_2
+    3300012: Torus_6_0
+    3300014: Torus_6_1
+    3300016: Torus_6_2
+    3300018: Torus_6_3
+    3300020: Torus_6_4
+    3300022: Torus_6_5
+    3300024: Torus_6_6
+    3300026: Torus_6_7
+    4300000: Cone
+    4300002: Cone_1
+    4300004: Torus_1
+    4300006: Torus_2
+    4300008: Cylinder
+    4300010: Torus
+    4300012: Torus_6_0
+    4300014: Torus_6_1
+    4300016: Torus_6_2
+    4300018: Torus_6_3
+    4300020: Torus_6_4
+    4300022: Torus_6_5
+    4300024: Torus_6_6
+    4300026: Torus_6_7
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
