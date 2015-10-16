@@ -62,6 +62,7 @@
      <Compile Include="Assets\Scr\UIManager.cs" />
      <Compile Include="Assets\StartGame.cs" />
      <Compile Include="Assets\WorldSelect.cs" />
+     <Compile Include="Assets\tapToContinue.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
