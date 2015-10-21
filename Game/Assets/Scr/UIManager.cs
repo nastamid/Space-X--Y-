@@ -13,6 +13,9 @@ public class UIManager : MonoBehaviour {
     public GameObject setGameOverPanel;
     public GameObject GameOverPanel;
     public GameObject PauseBTN;
+    public GameObject LevelSelectorPanel;
+    public GameObject AllStages;
+    public GameObject LevelText;
 
     LevelController levelController;
 	void Start () {
@@ -80,5 +83,33 @@ public class UIManager : MonoBehaviour {
         GlobalSettings.GameIsOver = true;
             GameOverPanel.SetActive(true);
             PauseBTN.SetActive(false);
+    }
+
+    public void GoToLevelSelector()
+    {
+        if (LevelText.activeInHierarchy)
+            LevelText.SetActive(false);
+        LevelController.Instance.DestoryCurrentLevel();
+        Time.timeScale = 1;
+        PausePanel.SetActive(false);
+        LevelSelectorPanel.SetActive(true);
+        disableActiveStage();
+
+    }
+
+    void disableActiveStage()
+    {
+        Transform parent = AllStages.transform;
+        for (int i = 0; i < parent.childCount; i++)
+        {
+            if (parent.GetChild(i).gameObject.transform.GetChild(0).GetComponent<MeshRenderer>().enabled == true)
+           {
+               parent.GetChild(i).gameObject.transform.GetChild(0).GetComponent<MeshRenderer>().enabled = false;
+           }
+        }
+        if (LevelController.Instance.Platform_GO.activeInHierarchy)
+        {
+            LevelController.Instance.Platform_GO.SetActive(false);
+        }
     }
 }

@@ -42,12 +42,8 @@ public class ItemRocket : MonoBehaviour {
             rb.MoveRotation(rb.rotation * deltaRotation);
         }
 
-
-      
-
         if (Input.GetKey(KeyCode.RightArrow))
             transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
-	
 	}
 
 
