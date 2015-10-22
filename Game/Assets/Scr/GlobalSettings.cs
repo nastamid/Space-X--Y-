@@ -13,6 +13,8 @@ public class GlobalSettings : MonoBehaviour {
     public static float  GlobalGravity;
 	// Use this for initialization
 	void Start () {
+        if (GameIsPaused) GameIsPaused = false;
+        if (GameIsOver) GameIsOver = false;
         GlobalGravity = setGlobalGravity;
         GlobalPlanet = setGlobalPlanet;
 	}

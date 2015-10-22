@@ -87,6 +87,8 @@ public class UIManager : MonoBehaviour {
 
     public void GoToLevelSelector()
     {
+        if (GameOverPanel.activeInHierarchy)
+            GameOverPanel.SetActive(false);
         if (LevelText.activeInHierarchy)
             LevelText.SetActive(false);
         LevelController.Instance.DestoryCurrentLevel();
@@ -112,4 +114,6 @@ public class UIManager : MonoBehaviour {
             LevelController.Instance.Platform_GO.SetActive(false);
         }
     }
+
+
 }

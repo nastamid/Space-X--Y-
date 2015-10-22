@@ -8,7 +8,6 @@ public class ItemRocket : MonoBehaviour {
     bool isLanded = false;
 
     float oldWinTimer;
-    float oldLoseTimer;
 
     public float RocketForce = 10;
     
@@ -19,7 +18,6 @@ public class ItemRocket : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         oldWinTimer = WinningTimer;
-        oldLoseTimer = LosingTimer;
         eulerAngleVelocity = new Vector3(0, 35, 0);
         rb = GetComponent<Rigidbody>();
 	}
@@ -44,7 +42,15 @@ public class ItemRocket : MonoBehaviour {
 
         if (Input.GetKey(KeyCode.RightArrow))
             transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
+
 	}
+
+    void OnMouseDown()
+    {
+        UIManager.instance.GameOver();
+        Time.timeScale = 0;
+        print("Touched Rocket");
+    }
 
 
 
@@ -103,10 +109,18 @@ public class ItemRocket : MonoBehaviour {
 
     void OnBecameInvisible()
     {
-        print("GameOver2");
+        print("GameOver In 1.5 Sec");
+        if (gameObject.active)
+            StartCoroutine(callGameOver());
         //Destroy(gameObject);
         //UIManager.instance.GameOver();
             
+    }
+
+    IEnumerator callGameOver()
+    {
+        yield return new WaitForSeconds(1.5f);
+        UIManager.instance.GameOver();
     }
 
 }

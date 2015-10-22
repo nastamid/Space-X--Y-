@@ -27,7 +27,6 @@ public class LevelController : MonoBehaviour
     public GameObject Mars_GO;
 
 
-
     public GameObject LevelText;
 
     string levelTxt;
