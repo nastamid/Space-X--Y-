@@ -21,11 +21,9 @@ public class LevelSelector : MonoBehaviour {
 
 
 
-
-
 	void Start () {
 
-        int passedLvlNum = 10;
+        int passedLvlNum = 18;
 
         if (passedLvlNum > 3)
         {

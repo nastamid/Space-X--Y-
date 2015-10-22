@@ -26,6 +26,9 @@ public class LevelController : MonoBehaviour
     public GameObject Deimos_GO;
     public GameObject Mars_GO;
 
+    public GameObject FinishScreenPanel_GO;
+    public GameObject FireWorks_GO;
+
 
     public GameObject LevelText;
 
@@ -73,6 +76,10 @@ public class LevelController : MonoBehaviour
 
     public void LoadLevel(int number)
     {
+
+       
+
+
         if (GlobalSettings.GameIsPaused) GlobalSettings.GameIsPaused = false;
         if (currentLevel != null)
             Destroy(currentLevel);
@@ -97,7 +104,6 @@ public class LevelController : MonoBehaviour
 
         if (number>3)
         {
-            print("earth post: " + Earth_GO.transform.position);
             Earth_GO.transform.position = new Vector3(Earth_GO.transform.position.x,-10.45f,Earth_GO.transform.position.z);
         }
         if (number>3 && (Platform_GO.activeInHierarchy ==true))
@@ -147,9 +153,10 @@ public class LevelController : MonoBehaviour
         }
         LevelText.GetComponent<Text>().text = levelTxt;
 
-        print(number);
         currentLevelNum = number;
         currentLevel = Instantiate(LevelList[number], Vector3.zero, Quaternion.identity) as GameObject;
+
+       
     }
 
     private void SetPlanet(string planetName)
@@ -182,18 +189,19 @@ public class LevelController : MonoBehaviour
     public void GoToNextLevel()
     {
         LoadNextLevel();
-        //GoingToNextLevel = true;
     }
 
 
 
     void LoadNextLevel()
     {
+        if (currentLevelNum + 1 > 18)
+        {
+            FinishTheGame();
+            return;
+        }
         Destroy(currentLevel);
-        print("currentLevelNum: " + currentLevelNum);
         LoadLevel(currentLevelNum += 1);
-
-        //RotatePlanetAnim();
     }
 
     void RotatePlanetAnim()
@@ -208,7 +216,6 @@ public class LevelController : MonoBehaviour
     {
         Destroy(currentLevel);
         LoadLevel(currentLevelNum);
-        print("REstarting");
 
     }
 
@@ -216,4 +223,15 @@ public class LevelController : MonoBehaviour
     {
         Destroy(currentLevel);
     }
+
+    public void FinishTheGame()
+    {
+        FinishScreenPanel_GO.SetActive(true);
+        FireWorks_GO.SetActive(true);
+        if (LevelText.activeInHierarchy)
+            LevelText.SetActive(false);
+        if (UIManager.instance.PauseBTN.activeInHierarchy)
+            UIManager.instance.PauseBTN.SetActive(false);
+    }
+
 }

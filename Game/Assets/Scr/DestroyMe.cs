@@ -17,7 +17,6 @@ public class DestroyMe : MonoBehaviour {
 
     void OnBecameInvisible()
     {
-        print ("ganadgurda" );
         Destroy(gameObject);
     }
 	

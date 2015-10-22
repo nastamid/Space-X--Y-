@@ -47,9 +47,11 @@ public class ItemRocket : MonoBehaviour {
 
     void OnMouseDown()
     {
+        if (GlobalSettings.GameFinished) return;
+        if (GlobalSettings.GameIsPaused) return;
+        if (GlobalSettings.GameIsOver) return;
         UIManager.instance.GameOver();
         Time.timeScale = 0;
-        print("Touched Rocket");
     }
 
 
@@ -69,7 +71,6 @@ public class ItemRocket : MonoBehaviour {
         if (other.gameObject.tag == "Planet")
         {
             WinningTimer -= Time.deltaTime;
-            print(WinningTimer);
             if (WinningTimer<0)
             {
                 LevelController.Instance.GoToNextLevel();
@@ -87,15 +88,12 @@ public class ItemRocket : MonoBehaviour {
     {
         if (other.gameObject.tag == "Planet")
         {
-            //print("touching planet + isLanded: " + isLanded);
 
             if (isLanded) return;
 
             LosingTimer -= Time.deltaTime;
-            //print(LosingTimer);
             if (LosingTimer < 0)
             {
-                print("GameOver1");
                 UIManager.instance.GameOver();
             }
         }
@@ -109,9 +107,10 @@ public class ItemRocket : MonoBehaviour {
 
     void OnBecameInvisible()
     {
-        print("GameOver In 1.5 Sec");
-        if (gameObject.active)
+        if (gameObject.activeInHierarchy)
+        {
             StartCoroutine(callGameOver());
+        }
         //Destroy(gameObject);
         //UIManager.instance.GameOver();
             
