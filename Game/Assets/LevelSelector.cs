@@ -23,7 +23,11 @@ public class LevelSelector : MonoBehaviour {
 
 	void Start () {
 
-        int passedLvlNum = 18;
+	}
+
+
+    public void ShouUpPlanets(int passedLvlNum)
+    {
 
         if (passedLvlNum > 3)
         {
@@ -50,8 +54,7 @@ public class LevelSelector : MonoBehaviour {
             Mars_UI_GO.GetComponent<Image>().sprite = Mars_SP;
             Mars_UI_GO.GetComponent<Button>().interactable = true;
         }
-	
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {

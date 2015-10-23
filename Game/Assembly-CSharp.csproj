@@ -59,6 +59,7 @@
      <Compile Include="Assets\Scr\ShowMars.cs" />
      <Compile Include="Assets\Scr\UIManager.cs" />
      <Compile Include="Assets\StartGame.cs" />
+     <Compile Include="Assets\TextTyping.cs" />
      <Compile Include="Assets\WorldSelect.cs" />
      <Compile Include="Assets\tapToContinue.cs" />
  <Reference Include="UnityEngine.UI">

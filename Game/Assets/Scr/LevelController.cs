@@ -77,7 +77,11 @@ public class LevelController : MonoBehaviour
     public void LoadLevel(int number)
     {
 
-
+        if (PlayerPrefs.GetInt("PassedLevel") < number)
+        {
+            print("passed LEvel:" + PlayerPrefs.GetInt("PassedLevel"));
+            PlayerPrefs.SetInt("PassedLevel", number);
+        }
 
 
         if (GlobalSettings.GameIsPaused) GlobalSettings.GameIsPaused = false;

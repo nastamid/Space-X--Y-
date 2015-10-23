@@ -93,6 +93,9 @@ public class UIManager : MonoBehaviour {
             LevelText.SetActive(false);
         if (LevelController.Instance.FinishScreenPanel_GO.activeInHierarchy)
             LevelController.Instance.FinishScreenPanel_GO.SetActive(false);
+
+        LevelSelectorPanel.GetComponent<LevelSelector>().ShouUpPlanets(PlayerPrefs.GetInt("PassedLevel"));
+
         LevelController.Instance.DestoryCurrentLevel();
         Time.timeScale = 1;
         PausePanel.SetActive(false);
