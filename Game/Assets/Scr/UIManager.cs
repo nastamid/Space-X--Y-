@@ -91,6 +91,8 @@ public class UIManager : MonoBehaviour {
             GameOverPanel.SetActive(false);
         if (LevelText.activeInHierarchy)
             LevelText.SetActive(false);
+        if (LevelController.Instance.FinishScreenPanel_GO.activeInHierarchy)
+            LevelController.Instance.FinishScreenPanel_GO.SetActive(false);
         LevelController.Instance.DestoryCurrentLevel();
         Time.timeScale = 1;
         PausePanel.SetActive(false);

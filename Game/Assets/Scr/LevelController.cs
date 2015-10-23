@@ -77,10 +77,11 @@ public class LevelController : MonoBehaviour
     public void LoadLevel(int number)
     {
 
-       
+
 
 
         if (GlobalSettings.GameIsPaused) GlobalSettings.GameIsPaused = false;
+        if (GlobalSettings.GameIsOver) GlobalSettings.GameIsOver = false;
         if (currentLevel != null)
             Destroy(currentLevel);
         if (!LevelSelectorPanel.activeInHierarchy)
@@ -99,6 +100,7 @@ public class LevelController : MonoBehaviour
         {
             UIManager.instance.LevelSelectorPanel.SetActive(false);
         }
+
        
         
 
@@ -227,7 +229,7 @@ public class LevelController : MonoBehaviour
     public void FinishTheGame()
     {
         FinishScreenPanel_GO.SetActive(true);
-        FireWorks_GO.SetActive(true);
+        //FireWorks_GO.SetActive(true);
         if (LevelText.activeInHierarchy)
             LevelText.SetActive(false);
         if (UIManager.instance.PauseBTN.activeInHierarchy)
