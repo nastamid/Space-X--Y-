@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scr\LevelGenerator.cs" />
      <Compile Include="Assets\Scr\ShowMars.cs" />
      <Compile Include="Assets\Scr\UIManager.cs" />
+     <Compile Include="Assets\SimpleParticlePack\Scripts\ParticleTester.cs" />
      <Compile Include="Assets\StartGame.cs" />
      <Compile Include="Assets\TextTyping.cs" />
      <Compile Include="Assets\WorldSelect.cs" />
