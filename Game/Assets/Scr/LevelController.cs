@@ -12,6 +12,8 @@ public class LevelController : MonoBehaviour
     public float smooth = 2.0f;
 
     int currentLevelNum;
+    public static int CurrentLevelNum;
+
     GameObject currentLevel;
     public GameObject AlienObjects;
     public GameObject CricleAlien;
@@ -31,6 +33,7 @@ public class LevelController : MonoBehaviour
 
 
     public GameObject LevelText;
+    public GameObject FinishLevelAndText;
 
     string levelTxt;
 
@@ -160,6 +163,7 @@ public class LevelController : MonoBehaviour
         LevelText.GetComponent<Text>().text = levelTxt;
 
         currentLevelNum = number;
+        CurrentLevelNum = currentLevelNum;
         currentLevel = Instantiate(LevelList[number], Vector3.zero, Quaternion.identity) as GameObject;
 
        
@@ -232,6 +236,8 @@ public class LevelController : MonoBehaviour
 
     public void FinishTheGame()
     {
+        FinishLevelAndText.GetComponent<Text>().text = "Time-" + TimerContoller.ElapsedTime + "/Level-" + LevelController.CurrentLevelNum; 
+
         FinishScreenPanel_GO.SetActive(true);
         //FireWorks_GO.SetActive(true);
         if (LevelText.activeInHierarchy)

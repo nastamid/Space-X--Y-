@@ -16,8 +16,11 @@ public class UIManager : MonoBehaviour {
     public GameObject LevelSelectorPanel;
     public GameObject AllStages;
     public GameObject LevelText;
+    public GameObject GameOverLevelAndText;
+
 
     LevelController levelController;
+
 	void Start () {
 
         if (instance!=null)
@@ -31,6 +34,7 @@ public class UIManager : MonoBehaviour {
 
         levelController = LevelControllerGO.GetComponent<LevelController>();
         GameOverPanel = setGameOverPanel;
+      
 	}
 	
 
@@ -62,8 +66,6 @@ public class UIManager : MonoBehaviour {
         GlobalSettings.GameIsPaused = false;
         PauseBTN.SetActive(true);
 
-
-
     }
 
     public void GoToHome()
@@ -80,6 +82,7 @@ public class UIManager : MonoBehaviour {
 
     public  void GameOver()
     {
+        GameOverLevelAndText.GetComponent<Text>().text = "Time-" + TimerContoller.ElapsedTime + "/Level-" + LevelController.CurrentLevelNum; 
         GlobalSettings.GameIsOver = true;
             GameOverPanel.SetActive(true);
             PauseBTN.SetActive(false);

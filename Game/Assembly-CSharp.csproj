@@ -46,23 +46,28 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\CallObjectsRandomly.cs" />
-     <Compile Include="Assets\EyesController.cs" />
-     <Compile Include="Assets\Eyes_Controller.cs" />
-     <Compile Include="Assets\LevelSelector.cs" />
      <Compile Include="Assets\Prefabs\Objects\ForRandom\DestroyRandomThing.cs" />
+     <Compile Include="Assets\Scr\CallObjectsRandomly.cs" />
      <Compile Include="Assets\Scr\DestroyMe.cs" />
+     <Compile Include="Assets\Scr\DisabledBtn.cs" />
+     <Compile Include="Assets\Scr\EyesController.cs" />
+     <Compile Include="Assets\Scr\Eyes_Controller.cs" />
      <Compile Include="Assets\Scr\GlobalSettings.cs" />
+     <Compile Include="Assets\Scr\ImgDisabledEffect.cs" />
      <Compile Include="Assets\Scr\ItemRocket.cs" />
      <Compile Include="Assets\Scr\LevelController.cs" />
      <Compile Include="Assets\Scr\LevelGenerator.cs" />
+     <Compile Include="Assets\Scr\LevelSelector.cs" />
      <Compile Include="Assets\Scr\ShowMars.cs" />
+     <Compile Include="Assets\Scr\StartGame.cs" />
+     <Compile Include="Assets\Scr\TextDisabledEffect.cs" />
+     <Compile Include="Assets\Scr\TextTyping.cs" />
+     <Compile Include="Assets\Scr\TimeAttackGameOverScreen.cs" />
+     <Compile Include="Assets\Scr\TimerContoller.cs" />
      <Compile Include="Assets\Scr\UIManager.cs" />
+     <Compile Include="Assets\Scr\WorldSelect.cs" />
+     <Compile Include="Assets\Scr\tapToContinue.cs" />
      <Compile Include="Assets\SimpleParticlePack\Scripts\ParticleTester.cs" />
-     <Compile Include="Assets\StartGame.cs" />
-     <Compile Include="Assets\TextTyping.cs" />
-     <Compile Include="Assets\WorldSelect.cs" />
-     <Compile Include="Assets\tapToContinue.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

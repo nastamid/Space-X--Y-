@@ -4,20 +4,22 @@ using System.Collections;
 public class ItemRocket : MonoBehaviour {
 
     float WinningTimer = 2;
-    public float LosingTimer = 5;
+    public float LosingTimer = 3;
     bool isLanded = false;
 
     float oldWinTimer;
+    float oldLoseTimer;
 
     public float RocketForce = 10;
     
     public float moveSpeed = 10f;
     public float turnSpeed = 50f;
      Vector3 eulerAngleVelocity;
-    public Rigidbody rb;
+     Rigidbody rb;
 	// Use this for initialization
 	void Start () {
         oldWinTimer = WinningTimer;
+        oldLoseTimer = LosingTimer;
         eulerAngleVelocity = new Vector3(0, 35, 0);
         rb = GetComponent<Rigidbody>();
 	}
@@ -78,11 +80,11 @@ public class ItemRocket : MonoBehaviour {
         }
     }
 
-    void OnTriggerExit()
-    {
-        isLanded = false;
-        WinningTimer = oldWinTimer;
-    }
+    //void OnTriggerExit()
+    //{
+    //    isLanded = false;
+    //    WinningTimer = oldWinTimer;
+    //}
 
     void OnCollisionStay(Collision other)
     {
@@ -96,6 +98,7 @@ public class ItemRocket : MonoBehaviour {
             {
                 UIManager.instance.GameOver();
             }
+            print(LosingTimer);
         }
 
     }

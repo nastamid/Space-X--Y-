@@ -3,13 +3,13 @@ using System.Collections;
 
 public class DestroyMe : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
 
     void OnMouseDown()
     {
+        if (!TimerContoller.FirstTapHappend)
+        {
+            TimerContoller.FirstTapHappend = true;
+        }
         if (GlobalSettings.GameIsPaused) return;
         if (GlobalSettings.GameIsOver) return;
         Destroy(gameObject);
@@ -20,8 +20,5 @@ public class DestroyMe : MonoBehaviour {
         Destroy(gameObject);
     }
 	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
 }

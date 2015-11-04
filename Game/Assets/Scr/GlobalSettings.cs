@@ -12,6 +12,8 @@ public class GlobalSettings : MonoBehaviour {
 
     public float setGlobalGravity;
     public static float  GlobalGravity;
+
+
 	// Use this for initialization
 	void Start () {
         if (GameIsPaused) GameIsPaused = false;
@@ -21,8 +23,5 @@ public class GlobalSettings : MonoBehaviour {
         GlobalPlanet = setGlobalPlanet;
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
 }
