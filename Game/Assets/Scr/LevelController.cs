@@ -51,30 +51,30 @@ public class LevelController : MonoBehaviour
         }
     }
 
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            for (int i = 0; i < 10; i++)
-            {
-                Instantiate(AlienObjects, new Vector3(0, 11, 0), Quaternion.identity);
-            }
-        }
+    //void Update()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.X))
+    //    {
+    //        for (int i = 0; i < 10; i++)
+    //        {
+    //            Instantiate(AlienObjects, new Vector3(0, 11, 0), Quaternion.identity);
+    //        }
+    //    }
 
-        if (Input.GetKeyDown(KeyCode.Z))
-        {
-            for (int i = 0; i < 10; i++)
-            {
+    //    if (Input.GetKeyDown(KeyCode.Z))
+    //    {
+    //        for (int i = 0; i < 10; i++)
+    //        {
 
-                Instantiate(CricleAlien, new Vector3(Random.Range(-2, 2), 11 + Random.Range(1, 5), Random.Range(-2, 2)), Quaternion.identity);
-            }
-        }
+    //            Instantiate(CricleAlien, new Vector3(Random.Range(-2, 2), 11 + Random.Range(1, 5), Random.Range(-2, 2)), Quaternion.identity);
+    //        }
+    //    }
 
-        if(Input.GetKey(KeyCode.Space))
-        {
-            //RotatePlanetAnim();
-        }
-    }
+    //    if(Input.GetKey(KeyCode.Space))
+    //    {
+    //        //RotatePlanetAnim();
+    //    }
+    //}
 
 
     public void LoadLevel(int number)

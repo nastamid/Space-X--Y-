@@ -28,22 +28,22 @@ public class ItemRocket : MonoBehaviour {
 	void Update () {
 
         //if (Input.GetKey(KeyCode.UpArrow))
-        //    transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
-        if (Input.GetKey(KeyCode.UpArrow))
-        {
-            gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, 1, 0) * RocketForce);
-        }
-        if (Input.GetKey(KeyCode.DownArrow))
-            transform.Translate(-Vector3.forward * moveSpeed * Time.deltaTime);
+        ////    transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
+        //if (Input.GetKey(KeyCode.UpArrow))
+        //{
+        //    gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, 1, 0) * RocketForce);
+        //}
+        //if (Input.GetKey(KeyCode.DownArrow))
+        //    transform.Translate(-Vector3.forward * moveSpeed * Time.deltaTime);
 
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            Quaternion deltaRotation = Quaternion.Euler(eulerAngleVelocity * Time.deltaTime);
-            rb.MoveRotation(rb.rotation * deltaRotation);
-        }
+        //if (Input.GetKey(KeyCode.LeftArrow))
+        //{
+        //    Quaternion deltaRotation = Quaternion.Euler(eulerAngleVelocity * Time.deltaTime);
+        //    rb.MoveRotation(rb.rotation * deltaRotation);
+        //}
 
-        if (Input.GetKey(KeyCode.RightArrow))
-            transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
+        //if (Input.GetKey(KeyCode.RightArrow))
+        //    transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
 
 	}
 
